@@ -63,6 +63,13 @@ class Person {
         document.body.appendChild(helloElement); 
     }
 
+    birthDay()
+    {
+        //Make sure to use this to refer to the current object!
+        //Typing just object would cause Js to llok for a variale
+        this.age = this.age + 1 ;
+    }
+
 }
 
 //Let's make some people!
@@ -77,4 +84,8 @@ jia.sayHello();
 
 jia.height = "7'"; //we can update and add new properties for our objects(name/ age/ hobbies in this case)
 
+jia.birthDay();
+console.log("jia is now..." + jia.age + "years old");
+
+// values inside an object are considered properties
 
